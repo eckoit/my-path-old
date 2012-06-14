@@ -155,6 +155,19 @@ $('#utag').live('pagecreate',function(event){
     $.couch.db('').openDoc('-settings', {
         success : function(doc) {
             app.controller.init(doc);
+        },
+        error : function(doc) {
+            app.controller.init({
+                tag_groups : [
+                    {
+                        name : "Home",
+                        tags : [{name: "Funny"}, {name: "Great"}]
+                    }
+
+                ]
+
+
+            });
         }
     });
 
