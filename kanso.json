@@ -1,0 +1,21 @@
+{
+    "name": "my-path",
+    "version": "0.0.1",
+    "description": "A personal micro-tagging and diary application.",
+    "attachments": [
+        "js",
+        "css",
+        "images",
+        "m.html",
+        "cache.manifest"
+    ],
+    "load": "ddoc/ddoc",
+    "modules": [
+        "ddoc"
+    ],
+    "dependencies": {
+        "properties": null,
+        "attachments": null,
+        "modules": null
+    }
+}
